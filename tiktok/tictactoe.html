@@ -1,0 +1,306 @@
+<html>
+    <header>
+        <title>TIK TAC TOE PROJECT</title>
+
+       <style>
+                   #btn{ 
+                   text-align: center;
+                   }
+      
+       </style>
+
+    </header>
+
+    <body id="btn">
+        
+         <script>var symbol=window.prompt("please enter a symbol ('x' or 'o')");
+
+            document.write("<b>TIK TAC TOE</b>")
+            if(symbol=='x' || symbol=='o')
+           {
+               
+               if(symbol=='x')
+              {
+                document.write("<br/>")
+                document.write("<b>player 1 gets the symbol :'x'</b>");
+                document.write("<br/>")
+                document.write("<b>player 2 gets the symbol :'o'</b>");
+                var a='x';
+                var b='o';
+              }
+       
+               else
+              {         
+                 document.write("<br/><br/><br/>");
+                 document.write("<b>player 1 gets the symbol :'o'</b> ");
+                 document.write("<br/>");
+                 document.write("<b>player 2 gets the symbol :'x'</b>");
+                 var a='o';
+                 var b='x';
+               }
+                         
+           }
+           
+       
+              
+           </script>
+         
+       
+      <br/><br/>
+        <div>
+           <button id="btn1"style="width: 30px;height: 25px;" onclick="handleClick(this);this.onclick=null;"></button>
+        <button id="btn2" style="width: 30px;height: 25px;"onclick="handleClick(this);this.onclick=null;"></button>
+        <button id="btn3" style="width: 30px;height: 25px;"onclick="handleClick(this);this.onclick=null;"></button>
+        <br/>
+        <button id="btn4" style="width: 30px;height: 25px;"onclick="handleClick(this);this.onclick=null;"></button>
+        <button id="btn5" style="width: 30px;height: 25px;"onclick="handleClick(this);this.onclick=null;"></button>
+        <button id="btn6" style="width: 30px;height: 25px;"onclick="handleClick(this);this.onclick=null;"></button>
+        <br/>
+        <button id="btn7" style="width: 30px;height: 25px;"onclick="handleClick(this);this.onclick=null;"></button>
+        <button id="btn8" style="width: 30px;height: 25px;"onclick="handleClick(this);this.onclick=null;"></button>
+        <button id="btn9" style="width: 30px;height: 25px;"onclick="handleClick(this);this.onclick=null;"></button>
+        </div>
+
+        <script>var btn1=document.getElementById("btn1");
+            var btn2=document.getElementById("btn2");
+            var btn3=document.getElementById("btn3");
+            var btn4=document.getElementById("btn4");
+            var btn5=document.getElementById("btn5");
+            var btn6=document.getElementById("btn6");
+            var btn7=document.getElementById("btn7");
+            var btn8=document.getElementById("btn8");
+            var btn9=document.getElementById("btn9");
+     
+          
+         var p1=0;
+     
+         function handleClick(element)
+            {
+              
+              if(a=='x')
+              {
+                 
+                  if(p1%2==0)
+                  {
+                       element.innerHTML='x';
+                       
+                  }
+                  else
+                  {
+                     element.innerHTML='o';
+                                     
+                  }
+                  p1++;
+                 
+              }
+     
+              if(a=='o')
+              {
+                  if(p1%2==0)
+                  {
+                       element.innerHTML='o';
+                       
+                  }
+                  else
+                  {
+                     element.innerHTML='x';
+                 }
+                  p1++;
+                  
+              }
+     
+     
+               if(btn1.innerHTML=='x' && btn2.innerHTML=='x' && btn3.innerHTML=='x'){
+                  alert("player x won the game")
+                  btn1.disabled=true;
+                  btn2.disabled=true;
+                  btn3.disabled=true;
+                  btn4.disabled=true;
+                  btn5.disabled=true;
+                  btn6.disabled=true;
+                  btn7.disabled=true;
+                  btn8.disabled=true;
+                  btn9.disabled=true;
+                             
+               }
+               if(btn4.innerHTML=='x' && btn5.innerHTML=='x' && btn6.innerHTML=='x'){
+                 alert("player x won the game")
+                  btn1.disabled=true;
+                  btn2.disabled=true;
+                  btn3.disabled=true;
+                  btn4.disabled=true;
+                  btn5.disabled=true;
+                  btn6.disabled=true;
+                  btn7.disabled=true;
+                  btn8.disabled=true;
+                  btn9.disabled=true;
+                            
+              }
+              if(btn7.innerHTML=='x' && btn8.innerHTML=='x' && btn9.innerHTML=='x'){
+                 alert("player x won the game")
+                  btn1.disabled=true;
+                  btn2.disabled=true;
+                  btn3.disabled=true;
+                  btn4.disabled=true;
+                  btn5.disabled=true;
+                  btn6.disabled=true;
+                  btn7.disabled=true;
+                  btn8.disabled=true;
+                  btn9.disabled=true;
+                            
+              }
+               if(btn1.innerHTML=='x' && btn4.innerHTML=='x' && btn7.innerHTML=='x'){
+                 alert("player x won the game")
+                  btn1.disabled=true;
+                  btn2.disabled=true;
+                  btn3.disabled=true;
+                  btn4.disabled=true;
+                  btn5.disabled=true;
+                  btn6.disabled=true;
+                  btn7.disabled=true;
+                  btn8.disabled=true;
+                  btn9.disabled=true;
+                            
+              }
+              
+              if(btn3.innerHTML=='x' && btn6.innerHTML=='x' && btn9.innerHTML=='x'){
+                 alert("player x  won the game")
+                 btn1.disabled=true;
+                  btn2.disabled=true;
+                  btn3.disabled=true;
+                  btn4.disabled=true;
+                  btn5.disabled=true;
+                  btn6.disabled=true;
+                  btn7.disabled=true;
+                  btn8.disabled=true;
+                  btn9.disabled=true;
+                            
+              }
+              if(btn2.innerHTML=='x' && btn5.innerHTML=='x' && btn7.innerHTML=='x'){
+                 alert("player x  won the game")
+                 btn1.disabled=true;
+                  btn2.disabled=true;
+                  btn3.disabled=true;
+                  btn4.disabled=true;
+                  btn5.disabled=true;
+                  btn6.disabled=true;
+                  btn7.disabled=true;
+                  btn8.disabled=true;
+                  btn9.disabled=true;
+                            
+              }
+              if(btn1.innerHTML=='x' && btn5.innerHTML=='x' && btn9.innerHTML=='x'){
+                 alert("player x  won the game")
+                 btn1.disabled=true;
+                  btn2.disabled=true;
+                  btn3.disabled=true;
+                  btn4.disabled=true;
+                  btn5.disabled=true;
+                  btn6.disabled=true;
+                  btn7.disabled=true;
+                  btn8.disabled=true;
+                  btn9.disabled=true;
+                            
+              }
+     
+     
+              if(btn1.innerHTML=='o' && btn2.innerHTML=='o' && btn3.innerHTML=='o'){
+                 alert("player o won the game")
+                 btn1.disabled=true;
+                  btn2.disabled=true;
+                  btn3.disabled=true;
+                  btn4.disabled=true;
+                  btn5.disabled=true;
+                  btn6.disabled=true;
+                  btn7.disabled=true;
+                  btn8.disabled=true;
+                  btn9.disabled=true;
+                            
+              }
+              if(btn4.innerHTML=='o' && btn5.innerHTML=='o' && btn6.innerHTML=='o'){
+                alert("player o won the game")
+                btn1.disabled=true;
+                  btn2.disabled=true;
+                  btn3.disabled=true;
+                  btn4.disabled=true;
+                  btn5.disabled=true;
+                  btn6.disabled=true;
+                  btn7.disabled=true;
+                  btn8.disabled=true;
+                  btn9.disabled=true;
+                           
+             }
+             if(btn7.innerHTML=='o' && btn8.innerHTML=='o' && btn9.innerHTML=='o'){
+                alert("player o won the game")
+                btn1.disabled=true;
+                  btn2.disabled=true;
+                  btn3.disabled=true;
+                  btn4.disabled=true;
+                  btn5.disabled=true;
+                  btn6.disabled=true;
+                  btn7.disabled=true;
+                  btn8.disabled=true;
+                  btn9.disabled=true;
+                           
+             }
+              if(btn1.innerHTML=='o' && btn4.innerHTML=='o' && btn7.innerHTML=='o'){
+                alert("player o won the game")
+                btn1.disabled=true;
+                  btn2.disabled=true;
+                  btn3.disabled=true;
+                  btn4.disabled=true;
+                  btn5.disabled=true;
+                  btn6.disabled=true;
+                  btn7.disabled=true;
+                  btn8.disabled=true;
+                  btn9.disabled=true;
+                           
+             }
+             
+             if(btn3.innerHTML=='o' && btn6.innerHTML=='o' && btn9.innerHTML=='o'){
+                alert("player o  won the game")
+                btn1.disabled=true;
+                  btn2.disabled=true;
+                  btn3.disabled=true;
+                  btn4.disabled=true;
+                  btn5.disabled=true;
+                  btn6.disabled=true;
+                  btn7.disabled=true;
+                  btn8.disabled=true;
+                  btn9.disabled=true;
+                           
+             }
+             if(btn2.innerHTML=='o' && btn5.innerHTML=='o' && btn7.innerHTML=='o'){
+                alert("player o  won the game")
+                btn1.disabled=true;
+                  btn2.disabled=true;
+                  btn3.disabled=true;
+                  btn4.disabled=true;
+                  btn5.disabled=true;
+                  btn6.disabled=true;
+                  btn7.disabled=true;
+                  btn8.disabled=true;
+                  btn9.disabled=true;
+                           
+             }
+             if(btn1.innerHTML=='o' && btn5.innerHTML=='o' && btn9.innerHTML=='o'){
+                alert("player o  won the game")
+                btn1.disabled=true;
+                  btn2.disabled=true;
+                  btn3.disabled=true;
+                  btn4.disabled=true;
+                  btn5.disabled=true;
+                  btn6.disabled=true;
+                  btn7.disabled=true;
+                  btn8.disabled=true;
+                  btn9.disabled=true;
+                           
+             }
+      }       
+            
+            </script>
+      
+</body>
+
+    
+</html> 
